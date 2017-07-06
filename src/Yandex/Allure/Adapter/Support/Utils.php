@@ -12,7 +12,7 @@ trait Utils
      */
     public static function getTimestamp()
     {
-        return round(microtime(true) * 1000);
+        return (int) (microtime(true) * 1000);
     }
 
     /**
